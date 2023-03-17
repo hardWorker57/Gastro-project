@@ -1,8 +1,8 @@
 import React from "react";
+import Website_banner_4 from "./assets/Website_banner_4.png";
 import кирилл_фартук_1 from "./assets/кирилл_фартук_1.png";
 import Ellipse_100 from "./assets/Ellipse_100.png";
 import Ellipse_101 from "./assets/Ellipse_101.png";
-import DSC03710_1 from "./assets/DSC03710_1.png";
 import Vector_1 from './assets/Vector_1.png';
 import Vector_2 from './assets/Vector_2.png';
 import Vector_3 from './assets/Vector_3.png';
@@ -18,15 +18,16 @@ import dish_4 from './assets/dish_4.png';
 import dish_5 from './assets/dish_5.png';
 import dish_6 from './assets/dish_6.png';
 import "./Header.css";
+import "./App.css"
 
-const About = () => {
-  return (
+const HeaderAbout = () => {
+    return (
     <div className="header">
       <div className="header__container">
         <div className="nav">
           <div className="nav__menu">
             <div className="nav__circle">
-              <img src={кирилл_фартук_1} />
+              <Link to='/'><img src={Website_banner_4} /></Link>
               healthy ration
             </div>
             <ul className="menu header__block">
@@ -82,7 +83,7 @@ const About = () => {
         <div className="hero__wrap">
           <img src={Ellipse_101} width="80%" />
           <div className="hero">
-            <img src={DSC03710_1} width="80%" />
+            <img src={кирилл_фартук_1} width="80%" />
           </div>
         </div>
       </div>
@@ -304,9 +305,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Link to='/'>Home</Link> */}
     </div>
-  );
-};
+    )
+}
 
-export default About;
+export default HeaderAbout;

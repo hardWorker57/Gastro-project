@@ -18,32 +18,39 @@ import dish_4 from './assets/dish_4.png';
 import dish_5 from './assets/dish_5.png';
 import dish_6 from './assets/dish_6.png';
 import "./Header.css";
+import { Link } from "react-router-dom";
+// import Home from "./Home";
+import gsap from "../node_modules/gsap";
 
 const Header = () => {
+  gsap.from(".nav__circle", {y: 50, opacity: 0});
+  gsap.to(".nav__circle", { y: 0, opacity: 1, duration: 1, delay: 1, repeat: 0 });
+  gsap.from(".green__elips", {y: 50, opacity: 0});
+  gsap.to(".green__elips", {y: 0, opacity: 1, duration: 1, delay: 3, repeat: 0});
   return (
     <div className="header">
       <div className="header__container">
         <div className="nav">
           <div className="nav__menu">
             <div className="nav__circle">
-              <img src={Website_banner_4} />
+              <Link to='/'><img src={Website_banner_4} /></Link>
               healthy ration
             </div>
             <ul className="menu header__block">
               <li className="menu__item">
-                <a href="/progs">Програмы питания</a>
+                <Link to="/progs">Програмы питания</Link>
               </li>
               <li className="menu__item">
-                <a href="/lunches">Бизнес-ланчи</a>
+                <Link to="/lunches">Бизнес-ланчи</Link>
               </li>
               <li className="menu__item">
-                <a href="/shop">Gastro Shop</a>
+                <Link to="/shop">Gastro Shop</Link>
               </li>
               <li className="menu__item">
-                <a href="/main">О нас</a>
+                <Link to="/about">О нас</Link>
               </li>
               <li className="menu__item">
-                <a href="/blog">Блог</a>
+                <Link to="/blog">Блог</Link>
               </li>
             </ul>
           </div>
