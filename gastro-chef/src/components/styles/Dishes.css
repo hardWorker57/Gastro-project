@@ -1,0 +1,16 @@
+.dish__images {
+    margin-top: 6em;
+    max-width: 100%;
+}
+.dishes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+    gap: 0.3em;
+}
+.dishes img {
+    max-width: 100%;
+    width: 20em;
+    height: 25em;
+    cursor: pointer;
+}

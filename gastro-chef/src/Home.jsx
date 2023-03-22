@@ -1,13 +1,12 @@
 import React from 'react'
-import Footer from './footer'
-import Header from './Header'
+import Advantages from './components/Advantages'
+import Table from './components/Table'
 
 const Home = () => {
   return (
     <div className="Home-wrapper">
-      Basic Home
-        {/* <Header/>
-        <Footer/> */}
+      <Advantages />
+      <Table />
     </div>
   )
 }

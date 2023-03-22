@@ -83,7 +83,12 @@
     border-radius: 50%;
     padding: 0.5em;
     cursor: pointer;
+    transition: 0.2s ease;
     z-index: 11;
+}
+.language:hover {
+    background-color: var(--prime-color);
+    color: #fff;
 }
 .language:nth-child(1) {
     color: var(--white-text);
@@ -109,6 +114,13 @@
     font-size: 1.6em;
     font-weight: bold;
 }
+.header__desc {
+    max-width: 24.5em;
+    font-size: 1.1em;
+}
+.header__desc_custom {
+    font-weight: bold;
+}
 .sidebar__wrap {
     display: flex;
     margin-left: 2em;
@@ -118,7 +130,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 1em;
 }
 .sidebar__item {
@@ -127,191 +139,13 @@
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 50%;
+    border-radius: 60px;
     height: 4em;
     width: 4em;
     cursor: pointer;
+    transition: all 0.6s ease-out;
 }
-.advantages {
-    margin-top: 23em;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    z-index: 20;
-    background-color: #ffffffaf;
-    border-radius: 40px;
-}
-.container__custom {
-    position: relative;
-}
-.advantage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.6em 1.4em;
-}
-.card__content {
-    text-align: center;
-    font-size: 0.8em;
-}
-.advantages__elips {
-    position: absolute;
-    top: 0;
-    left: -20em;
-}
-.shedule {
-    margin-top: 7em;
-}
-.shedule__titles {
-    display: flex;
-    justify-content: space-between;
-}
-.shedule__regimes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3em;
-}
-.shedule__regime {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.shedule__table {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3em;
-}
-.table__left {
-    max-width: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
-}
-.table__days, .card__title {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.table__days {
-    display: flex;
-    gap: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 1.6em;
-}
-.table__days span:nth-child(1) {
-    color: var(--prime-color);
-}
-.table__desc {
-    padding: 1.5em 2.5em;
-    background-color: var(--prime-color);
-    color: var(--white-text);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding-bottom: 2.5em;
-}
-.table__desc__title {
-    display: flex;
-    align-items: baseline;
-    gap: 1em;
-}
-.content__strech {
-    font-size: 0.8em;
-}
-.table__price {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.table__price__item {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.price__discount span {
-    text-align: center;
-}
-.shedule__day {
-    padding: 2em 3em;
-    margin-top: 1.5em;
-    border-radius: 30px;
-}
-.day__item {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.2em;
-}
-.day__block {
-    display: flex;
-    gap: 2em;
-    align-items: baseline;
-}
-.day__menu__item {
-    display: flex;
-    justify-content: start;
-}
-.time__block {
+.sidebar__item:hover {
     width: 8em;
-}
-.day__last__blocks {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-}
-.dish__images {
-    margin-top: 6em;
-    max-width: 100%;
-}
-.dishes {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 0;
-    gap: 0.3em;
-}
-.dishes img {
-    max-width: 100%;
-    width: 20em;
-    height: 25em;
-    cursor: pointer;
-}
-.order__faq {
-    margin-top: 4em;
-    display: flex;
-    justify-content: space-between;
-}
-.order__faq__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.faq {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.form__name {
-    color: var(--prime-color);
-}
-.form__number {
-    color: var(--red);
-}
-.form__title {
-    margin-left: 1em;
-    margin-top: 1.5em;
-}
-.agreement {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    margin: 0.8em 0;
-}
-.agree__content span {
     color: var(--prime-color);
 }

@@ -33,6 +33,10 @@ li {
 .container__custom {
   max-width: 80%;
   margin-inline: auto;
+  position: relative;
+}
+.bold_text {
+  font-weight: bold;
 }
 .button {
   font-family: 'Comfortaa', cursive;
@@ -66,6 +70,10 @@ li {
 .inactive__btn {
   background-color: var(--grey);
   color: var(--custom-black);
+}
+.card__content {
+  text-align: center;
+  font-size: 0.8em;
 }
 .big__title {
   font-size: 1.6em;
